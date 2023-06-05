@@ -10,13 +10,7 @@ console.log(JSON.stringify(ZoomMtg.checkSystemRequirements()));
 ZoomMtg.preLoadWasm();
 ZoomMtg.prepareWebSDK();
 
-const CLIENT_ID = "bu4v_ZeER0SAeMEEwh0vwQ";
-/**
- * NEVER PUT YOUR ACTUAL SDK SECRET OR CLIENT SECRET IN CLIENT SIDE CODE, THIS IS JUST FOR QUICK PROTOTYPING
- * The below generateSignature should be done server side as not to expose your sdk secret in public
- * You can find an eaxmple in here: https://developers.zoom.us/docs/meeting-sdk/auth/#signature
- */
-const CLIENT_SECRET = "4GsyO7d8Smt8MrvtW59NM44onkH7nx8K";
+
 
 testTool = window.testTool;
 document.getElementById("display_name").value =
